@@ -1,14 +1,14 @@
-user = "Linn"
-user_pw = 2468
+correct_username = "Linn"
+correct_pw = "2468"
 
 user_name = input('username: ')
-password = int(input('password: '))
+password =input('password: ')
 
-if user_name == user and user_pw == password:
+if user_name == correct_username and password == correct_pw:
     print("You have Login successfully!")
-elif user_name != user and user_pw == password:
+elif user_name != correct_username and password == correct_pw:
     print("Worong username. Plz, try again!")
-elif user_name == user and user_pw != password:
+elif user_name == correct_username and password != correct_pw:
     print("Worong password. Plz, try again!") 
-elif user_name != user and user_pw != password:
-    print("Worng username and password! Plz, try again")   
+elif user_name != correct_username and password != correct_pw:
+    print("Worng username and password! Plz, try again")      
